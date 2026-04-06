@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noir & Bloom — Artisan Café</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span>Noir <em>&amp;</em> Bloom</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Reserve a Table</a>
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <!-- Unsplash free-to-use dark café image -->
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Est. 2019 · Bengaluru</p>
+      <h1 class="hero-title reveal delay-1">
+        Where Every Cup<br /><em>Tells a Story</em>
+      </h1>
+      <p class="hero-sub reveal delay-2">
+        Single-origin brews, hand-crafted pastries &amp; a sanctuary<br />
+        for those who appreciate the art of slow mornings.
+      </p>
+      <div class="hero-actions reveal delay-3">
+        <a href="#menu" class="btn-primary">Explore the Menu</a>
+        <a href="#about" class="btn-ghost">Our Story ↓</a>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE STRIP ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Single Origin Coffee</span><span>✦</span>
+      <span>Artisan Pastries</span><span>✦</span>
+      <span>Cold Brew &amp; Tonics</span><span>✦</span>
+      <span>Specialty Teas</span><span>✦</span>
+      <span>Weekend Brunch</span><span>✦</span>
+      <span>Single Origin Coffee</span><span>✦</span>
+      <span>Artisan Pastries</span><span>✦</span>
+      <span>Cold Brew &amp; Tonics</span><span>✦</span>
+      <span>Specialty Teas</span><span>✦</span>
+      <span>Weekend Brunch</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image stack -->
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=80" alt="Barista crafting coffee" />
+          </div>
+          <div class="about-img-secondary">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&q=80" alt="Café interior" />
+            <div class="about-stat-badge">
+              <span class="stat-num">4.9</span>
+              <span class="stat-label">★ Google Rating</span>
+            </div>
+          </div>
+        </div>
+        <!-- Text -->
+        <div class="about-text">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Born from Passion,<br /><em>Brewed with Purpose</em></h2>
+          <p class="about-body">
+            Noir &amp; Bloom was founded by childhood friends Anika &amp; Ravi, who quit their corporate careers in 2019 to pursue one simple obsession — a truly perfect cup of coffee in a space that felt like home.
+          </p>
+          <p class="about-body">
+            Every bean we source is ethically traded, every pastry baked fresh each morning, and every corner of our café designed for you to slow down, breathe, and just be.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="highlight-num">12K+</span>
+              <span class="highlight-label">Happy guests</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-num">6</span>
+              <span class="highlight-label">Coffee origins</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-num">100%</span>
+              <span class="highlight-label">Ethically sourced</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU / SERVICES ========== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">The Menu</p>
+        <h2 class="section-title">Crafted for Every <em>Moment</em></h2>
+        <p class="section-desc">From the first sip to the last crumb — everything made with intention.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="all">All</button>
+        <button class="tab" data-tab="coffee">Coffee</button>
+        <button class="tab" data-tab="food">Food</button>
+        <button class="tab" data-tab="cold">Cold Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- Coffee items -->
+        <div class="menu-card" data-category="coffee">
+          <div class="card-icon">☕</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Pour Over</h3>
+              <span class="price">₹280</span>
+            </div>
+            <p>Ethiopia Yirgacheffe, single origin. Floral notes with a clean citrus finish.</p>
+            <span class="tag">Signature</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="card-icon">🫘</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Flat White</h3>
+              <span class="price">₹220</span>
+            </div>
+            <p>Ristretto-based with velvety micro-foamed milk. Rich &amp; smooth.</p>
+            <span class="tag">Bestseller</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="card-icon">🌙</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Noir Espresso</h3>
+              <span class="price">₹180</span>
+            </div>
+            <p>Our house blend — dark chocolate, brown sugar &amp; a whisper of smoke.</p>
+          </div>
+        </div>
+
+        <!-- Food items -->
+        <div class="menu-card" data-category="food">
+          <div class="card-icon">🥐</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Almond Croissant</h3>
+              <span class="price">₹195</span>
+            </div>
+            <p>Baked fresh at 6am. Buttery layers, almond cream, and a dusting of powdered sugar.</p>
+            <span class="tag">Fresh Daily</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="food">
+          <div class="card-icon">🥑</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Avocado Toast</h3>
+              <span class="price">₹340</span>
+            </div>
+            <p>Sourdough, smashed avocado, pomegranate seeds &amp; chilli flakes. Brunch perfection.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="food">
+          <div class="card-icon">🍰</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Basque Cheesecake</h3>
+              <span class="price">₹260</span>
+            </div>
+            <p>Burnt, caramelized top hiding a silky, cloud-soft center. No crust needed.</p>
+            <span class="tag">Chef's Pick</span>
+          </div>
+        </div>
+
+        <!-- Cold items -->
+        <div class="menu-card" data-category="cold">
+          <div class="card-icon">🧊</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Cold Brew Tonic</h3>
+              <span class="price">₹260</span>
+            </div>
+            <p>18-hour steeped cold brew, poured over tonic water. Effervescent &amp; bold.</p>
+            <span class="tag">Summer Hit</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="cold">
+          <div class="card-icon">🌸</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Rose Iced Latte</h3>
+              <span class="price">₹240</span>
+            </div>
+            <p>Rose syrup, oat milk, espresso &amp; ice. Fragrant, creamy &amp; gorgeous.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="cold">
+          <div class="card-icon">🍵</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Matcha Lemonade</h3>
+              <span class="price">₹220</span>
+            </div>
+            <p>Ceremonial grade matcha, freshly squeezed lemon &amp; a hint of mint.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">The Atmosphere</p>
+        <h2 class="section-title">A Space Worth <em>Lingering In</em></h2>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80" alt="Café interior" />
+        <div class="gallery-overlay"><span>The Space</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=600&q=80" alt="Latte art" />
+        <div class="gallery-overlay"><span>Latte Art</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=600&q=80" alt="Pastries" />
+        <div class="gallery-overlay"><span>Morning Pastries</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=900&q=80" alt="Café window" />
+        <div class="gallery-overlay"><span>Golden Hour</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Coffee beans" />
+        <div class="gallery-overlay"><span>The Beans</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">What Guests Say</p>
+        <h2 class="section-title">Stories Over <em>Coffee</em></h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Noir &amp; Bloom is my weekly ritual. The pour over is the best I've had in Bengaluru — and I've tried them all. The space feels like someone actually thought about making people feel welcome."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#c9a96e">SR</div>
+            <div>
+              <strong>Sumedha Rao</strong>
+              <span>Product Designer, Bengaluru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The almond croissant alone is worth the trip. I dragged my entire team here for a Friday morning brainstorm and now it's become our unofficial office."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#7a9e7e">KM</div>
+            <div>
+              <strong>Kartik Menon</strong>
+              <span>Startup Founder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Finally a café that doesn't play music so loud you can't think. The Rose Iced Latte is dangerously good. I'm here three times a week, no shame."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#b07ba4">PN</div>
+            <div>
+              <strong>Preethi Nair</strong>
+              <span>Freelance Writer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Hosted a small client meeting here — the staff was incredibly attentive, the coffee kept flowing, and the atmosphere made a great impression. Highly recommend."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#8fa3b1">AR</div>
+            <div>
+              <strong>Akash Reddy</strong>
+              <span>Management Consultant</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: info -->
+        <div class="contact-info">
+          <p class="section-eyebrow">Find Us</p>
+          <h2 class="section-title">Come Say <em>Hello</em></h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>12, Church Street, Lavelle Road,<br />Bengaluru, Karnataka 560001</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⏰</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Fri: 7:30am – 9:00pm<br />Sat–Sun: 8:00am – 10:00pm</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@noirandbloom.in</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map embed (Church Street, Bengaluru) -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0082!2d77.6032!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sChurch+Street%2C+Bengaluru!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+              width="100%" height="220" style="border:0;border-radius:12px" allowfullscreen loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-wrap">
+          <h3>Reserve a Table or <em>Send a Note</em></h3>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Anika Sharma" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="hello@you.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option>Table Reservation</option>
+                <option>Private Event Booking</option>
+                <option>Feedback</option>
+                <option>Just Saying Hi</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what's on your mind…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">Send Message ✦</button>
+            <p class="form-success" id="formSuccess">✓ Message sent! We'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">✦</span> Noir <em>&amp;</em> Bloom
+          </div>
+          <p>A sanctuary for slow mornings and extraordinary coffee. Bengaluru's finest artisan café since 2019.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-btn">IG</a>
+            <a href="#" aria-label="Facebook" class="social-btn">FB</a>
+            <a href="#" aria-label="Twitter" class="social-btn">TW</a>
+            <a href="#" aria-label="Google" class="social-btn">G+</a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Hours -->
+        <div class="footer-links">
+          <h4>Opening Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon – Fri</span><span>7:30am – 9pm</span></li>
+            <li><span>Saturday</span><span>8am – 10pm</span></li>
+            <li><span>Sunday</span><span>8am – 10pm</span></li>
+            <li><span>Holidays</span><span>9am – 8pm</span></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Stay in the Loop</h4>
+          <p>New menus, events &amp; the occasional love letter about coffee.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="your@email.com" />
+            <button>→</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Noir &amp; Bloom. All rights reserved.</p>
+        <p>Crafted with ♥ in Bengaluru</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
